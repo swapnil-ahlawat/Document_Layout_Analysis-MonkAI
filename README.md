@@ -28,9 +28,9 @@ Firstly, the dataset was converted to Yolo format. The mode was trained for 10 e
 
 Following are the results the model achieved on some test images:
 
-<img src="/Output_Images/Yolo_test1_output.jpeg" width="350" />
-<img src="/Output_Images/Yolo_test2_output.jpeg" width="350" />
-<img src="/Output_Images/Yolo_test3_output.jpeg" width="350" />
+<img src="/Output_Images/yolov3_test1.jpeg" width="350" />
+<img src="/Output_Images/yolov3_test2.jpeg" width="350" />
+<img src="/Output_Images/yolov3_test3.jpeg" width="350" />
 
 The model is predicting most of the labels correctly with high confidence (though it is missing some of them) and the bounding boxes are also fine.
 Both of them can be greatly improved by training for more epochs. The training curves (in the notebook) haven't flattened out yet which suggests that the model can be trained more.
@@ -43,9 +43,9 @@ After some comparisons, it was found out that VGG16 performs better than ResNet1
 
 Following are the results it achieved on some test images:
 
-<img src="/Output_Images/FasterRCNN_test1_output.png" width="350" />
-<img src="/Output_Images/FasterRCNN_test2_output.png" width="350" />
-<img src="/Output_Images/FasterRCNN_test3_output.png" width="350" />
+<img src="/Output_Images/fasterRCNN_test1.png" width="350" />
+<img src="/Output_Images/fasterRCNN_test2.png" width="350" />
+<img src="/Output_Images/fasterRCNN_test3.png" width="350" />
 
 As it can be seen, the model is performing very poorly on test images. The reason for this issue is still unknown (can be issue in conversion to COCO format, pause and resume issue or backend issue) as the model was taking a lot of time in training (45 minutes per epoch) and I couldn't explore much due to time constraints.
 
@@ -57,9 +57,9 @@ VGG16 has been used here too for comparison purposes. Out of options available f
 
 Following are the results it achieved on some test images:
 
-<img src="/Output_Images/SDD_test1_output.png" width="350" />
-<img src="/Output_Images/SDD_test2_output.png" width="350" />
-<img src="/Output_Images/SDD_test3_output.png" width="350" />
+<img src="/Output_Images/ssd512_test1.png" width="350" />
+<img src="/Output_Images/ssd512_test2.png" width="350" />
+<img src="/Output_Images/ssd512_test3.png" width="350" />
 
 The model is performing well in identifying objects with very high confidence but it is biased a lot towards paragraphs. Its performance can be improved by using bigger batch size, training for more epochs  and more data augmentation techniques to reduce bias.
 
