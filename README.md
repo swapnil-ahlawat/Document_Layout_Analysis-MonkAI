@@ -1,6 +1,6 @@
 # Document Layout Detection using MonkAI Object Detection Library
 
-Models that takes a document image file as input and locates the position of a set of objects, predicts their labels and confidence scores.
+Deep learning models that take a document image file as input, locate the position of paragraphs, lines, images, etc. with their labels and confidence scores.
 
 ## Choice of architecture
 -Inspiration from the blog- https://medium.com/@Intellica.AI/a-comparative-study-of-custom-object-detection-algorithms-9e7ddf6e765e
